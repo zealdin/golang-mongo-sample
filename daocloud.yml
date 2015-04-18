@@ -4,9 +4,12 @@ services:
   - mongodb
 
 # using default docker-link env
-#env:
-#  - MONGODB_PORT_27017_TCP_ADDR=mongodb
-#  - MONGODB_PORT_27017_TCP_PORT=27017
+env:
+  - MONGODB_PORT_27017_TCP_ADDR=10.10.72.139
+  - MONGODB_PORT_27017_TCP_PORT=27017
+  - MONGODB_USERNAME=uQ3OsDRt1wAhMJzg
+  - MONGODB_PASSWORD=pZE7WyYqLe0KahSgu
+  - MONGODB_INSTANCE_NAME=ClPS5YM1h7Bi9jbE
 
 script:
   - export GOPATH=$PWD
